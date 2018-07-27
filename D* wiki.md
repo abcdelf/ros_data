@@ -5,6 +5,7 @@ while(!openList.isEmpty()) {
 
 Expand
 ------
+```
   void expand(currentPoint) {
    boolean isRaise = isRaise(currentPoint);
    double cost;
@@ -29,10 +30,11 @@ Expand
     }
    }
   }
-  
+```  
   
 Check for Raise
 ---------------
+```
 boolean isRaise(point) {
  double cost;
  if(point.getCurrentCost() > point.getMinimumCost()) {
@@ -45,3 +47,4 @@ boolean isRaise(point) {
  }
  return point.getCurrentCost() > point.getMinimumCost();
 }
+```
